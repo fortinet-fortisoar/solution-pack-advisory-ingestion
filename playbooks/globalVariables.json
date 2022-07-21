@@ -1,0 +1,20 @@
+[
+    {
+        "id": 14,
+        "name": "Excludelist_Domains",
+        "value": "google.com,yahoo.com,fortinet.net,cybersponse.com,gmail.com,outlook.com,microsoft.com",
+        "default_value": "google.com,yahoo.com,fortinet.net,cybersponse.com,gmail.com,outlook.com,microsoft.com"
+    },
+    {
+        "id": 13,
+        "name": "Excludelist_URLs",
+        "value": "https:\/\/www.google.com,https:\/\/mail.yahoo.com\/login.html,https:\/\/www.office.com\/",
+        "default_value": "https:\/\/www.google.com,https:\/\/mail.yahoo.com\/login.html,https:\/\/www.office.com\/"
+    },
+    {
+        "id": 12,
+        "name": "Excludelist_IPs",
+        "value": "8.8.8.8,10.1.1.2,151.205.102.42,10.0.1.1",
+        "default_value": "8.8.8.8,10.1.1.2"
+    }
+]
