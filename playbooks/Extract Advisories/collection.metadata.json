@@ -1,0 +1,11 @@
+{
+    "@context": "\/api\/3\/contexts\/WorkflowCollection",
+    "@type": "WorkflowCollection",
+    "name": "Extract Advisories",
+    "description": null,
+    "visible": true,
+    "image": null,
+    "uuid": "bbdaa4fd-40d6-4e9b-b89c-3d9601e07508",
+    "deletedAt": null,
+    "recordTags": []
+}

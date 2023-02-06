@@ -1,0 +1,1086 @@
+[
+    {
+        "name": "code-snippet",
+        "label": "Code Snippet",
+        "category": "utilities",
+        "description": "Execute code snippets as part of your Playbooks",
+        "publisher": null,
+        "operation_roles": {
+            "python_inline_code_editor": [],
+            "python_inline": []
+        },
+        "configurations": [
+            {
+                "id": 29,
+                "config_id": "2fde865c-89ec-42e9-9501-005fab83ac63",
+                "status": 1,
+                "name": "Codesnippet",
+                "default": true,
+                "config": {
+                    "allow_imports": true
+                },
+                "remote_status": [],
+                "health_status": [],
+                "connector": 73,
+                "agent": "b63160b75d9391c6800ecd2eed7d6edf",
+                "teams": []
+            }
+        ],
+        "dataImports": [],
+        "install_mode": "rpm",
+        "ingestionPlaybooks": {
+            "collections": [],
+            "exported_tags": [],
+            "globalVariables": []
+        }
+    },
+    {
+        "name": "exchange",
+        "label": "Exchange",
+        "category": "Email Server",
+        "description": "The Exchange connector provides a robust, platform-independent, and simple interface for communicating with Microsoft Exchange 2007-2016 Server or Office 365 using Exchange Web Services (EWS).",
+        "publisher": null,
+        "operation_roles": {
+            "get_email_new": [],
+            "send_email": [],
+            "mark_as_read": [],
+            "run_query": [],
+            "move_email": [],
+            "copy_email": [],
+            "delete_email": [],
+            "create_calendar_event": [],
+            "get_calendar_events": [],
+            "get_contacts": [],
+            "get_email": [],
+            "get_folder_metadata": [],
+            "add_category": [],
+            "get_category": [],
+            "remove_category": []
+        },
+        "configurations": [
+            {
+                "id": 10,
+                "config_id": "ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                "status": 1,
+                "name": "Exchange",
+                "default": true,
+                "config": {
+                    "host": "outlook.office365.com",
+                    "has_ssl": "https",
+                    "exchange": "Office365",
+                    "password": "9G0XMm\/9C5L8H82zPDxh0Etd5K7ebNa7ERBg8w==I3dmcn23@KlS2#!ck",
+                    "username": "fortisoardemo@outlook.com",
+                    "verify_ssl": true,
+                    "access_type": "DELEGATE",
+                    "email_address": "fortisoardemo@outlook.com",
+                    "use_autodiscover": "",
+                    "notification_service": ""
+                },
+                "remote_status": [],
+                "health_status": [],
+                "connector": 17,
+                "agent": "b63160b75d9391c6800ecd2eed7d6edf",
+                "teams": []
+            }
+        ],
+        "dataImports": [
+            {
+                "id": 4,
+                "name": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                "description": "Metadata for Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                "status": null,
+                "created_by": "3451141c-bac6-467c-8d72-85e0fab569ce",
+                "modified_by": "3451141c-bac6-467c-8d72-85e0fab569ce",
+                "owners": [],
+                "data_mapping": [],
+                "playbooks": [],
+                "created_at": "2022-04-24T13:53:05.498601Z",
+                "modified_at": "2022-04-24T13:53:30.919263Z",
+                "metadata": {
+                    "scheduleId": "gAAAAABiZVZaBS5wxuuBGUDqYCOJWvvrl82wc0G8dHDpsc6RMGegvti1z2KPVyzKHRbwyMYOFWbioMIuEBqklIt5ihwFAqIjDQ==",
+                    "scheduleName": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                    "scheduleStatus": true
+                },
+                "configuration": "ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                "schedule": {
+                    "id": "gAAAAABi1_vvuFQTrV8Td8HXVFTh24Pys8zYPYq55LMKr728-ALpunUr0c2A8CncAJVTXjr-2O9TL6mS1OJMiOeuOg2hHx1L4Q==",
+                    "crontab": {
+                        "id": 4,
+                        "minute": "0",
+                        "hour": "*\/1",
+                        "day_of_week": "*",
+                        "day_of_month": "*",
+                        "month_of_year": "*",
+                        "timezone": "UTC"
+                    },
+                    "interval": null,
+                    "name": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                    "task": "workflow.tasks.periodic_task",
+                    "args": "[]",
+                    "kwargs": {
+                        "exit_if_running": false,
+                        "wf_iri": "\/api\/3\/workflows\/37a1f2f0-8d0e-47d8-9b07-2b852db702ca",
+                        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+                        "name": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                        "description": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                        "auth": {
+                            "auth_method": "CS HMAC"
+                        },
+                        "referenceid": null,
+                        "schedule_entry_name": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                        "schedule_id": "ebb24336-7491-4c43-82e6-4577d702718e",
+                        "start_time": null,
+                        "expires": null,
+                        "timezone": "UTC",
+                        "priority": null
+                    },
+                    "queue": null,
+                    "exchange": null,
+                    "routing_key": null,
+                    "headers": "{}",
+                    "priority": 3,
+                    "expires": null,
+                    "expire_seconds": null,
+                    "one_off": false,
+                    "start_time": null,
+                    "enabled": true,
+                    "last_run_at": "2022-07-20T12:00:00.024740Z",
+                    "total_run_count": 2443,
+                    "date_changed": "2022-07-20T12:00:00.087481Z",
+                    "description": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                    "solar": null,
+                    "clocked": null
+                }
+            }
+        ],
+        "install_mode": "rpm",
+        "ingestionPlaybooks": {
+            "collections": [
+                {
+                    "@context": "\/api\/3\/contexts\/WorkflowCollection",
+                    "@type": "WorkflowCollection",
+                    "name": "Exchange 3.4.4 ExchangeIngestion(ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad)",
+                    "description": null,
+                    "visible": false,
+                    "workflows": [
+                        {
+                            "@type": "Workflow",
+                            "triggerLimit": null,
+                            "name": "Exchange > Ingest",
+                            "aliasName": null,
+                            "tag": "#exchange #dataingestion #ingest #create",
+                            "description": "Fetch unread emails from Exchange mailbox",
+                            "isActive": true,
+                            "debug": false,
+                            "singleRecordExecution": false,
+                            "remoteExecutableFlag": false,
+                            "parameters": [],
+                            "synchronous": false,
+                            "collection": "\/api\/3\/workflow_collections\/ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                            "versions": [],
+                            "triggerStep": "\/api\/3\/workflow_steps\/4e04bea2-aa20-4ade-b3ff-f686e446a72a",
+                            "steps": [
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Create Communications Record",
+                                    "description": null,
+                                    "arguments": {
+                                        "when": "{{vars.steps.Fetch_Emails.use_communications}}",
+                                        "for_each": {
+                                            "item": "{{vars.steps.Fetch_Emails.data}}",
+                                            "__bulk": true,
+                                            "condition": ""
+                                        },
+                                        "resource": {
+                                            "to": "{{vars.item[\"headers\"][\"to\"]}}",
+                                            "body": "<p>{{vars.item[\"body\"][\"html\"]}}<\/p>",
+                                            "from": "{{vars.item[\"headers\"][\"from\"]}}",
+                                            "type": {
+                                                "id": 300,
+                                                "@id": "\/api\/3\/picklists\/b8e7c917-5299-4a43-9c1a-fac1d9a5438f",
+                                                "icon": null,
+                                                "@type": "Picklist",
+                                                "color": null,
+                                                "display": "Email",
+                                                "listName": "\/api\/3\/picklist_names\/57d30379-dbba-4684-b126-ec3ad8766f06",
+                                                "itemValue": "Email",
+                                                "orderIndex": 0
+                                            },
+                                            "alerts": "{%if vars.item[\"body\"][\"html\"] | regex_search('(?<=FSR)(.*?)(?=FSR)')%}{{vars.item[\"body\"][\"html\"] | regex_search('(?<=FSR)(.*?)(?=FSR)') | string | b64decode}}{%else%}[]{%endif%}",
+                                            "subject": "{{vars.item[\"headers\"][\"subject\"]}}",
+                                            "__replace": "",
+                                            "emailRefId": "{{ vars.item.headers['message-id'] | join }}",
+                                            "msgDirection": {
+                                                "id": 302,
+                                                "@id": "\/api\/3\/picklists\/c89f8eb7-0669-4535-9935-888ff46f544f",
+                                                "icon": null,
+                                                "@type": "Picklist",
+                                                "color": null,
+                                                "display": "Received",
+                                                "listName": "\/api\/3\/picklist_names\/09b97c81-669a-4ac8-8668-920913f3329b",
+                                                "itemValue": "Received",
+                                                "orderIndex": 0
+                                            }
+                                        },
+                                        "_showJson": false,
+                                        "operation": "Overwrite",
+                                        "collection": "\/api\/3\/communication",
+                                        "fieldOperation": {
+                                            "recordTags": "Overwrite"
+                                        },
+                                        "step_variables": []
+                                    },
+                                    "status": null,
+                                    "top": "300",
+                                    "left": "560",
+                                    "stepType": "\/api\/3\/workflow_step_types\/2597053c-e718-44b4-8394-4d40fe26d357",
+                                    "uuid": "3159d1d7-a0e5-4bcd-ac75-8cac32e62c78"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Fetch Emails",
+                                    "description": null,
+                                    "arguments": {
+                                        "arguments": [],
+                                        "step_variables": [],
+                                        "workflowReference": "\/api\/3\/workflows\/b03f9571-cad5-4126-ac80-bd6183d42e06"
+                                    },
+                                    "status": null,
+                                    "top": "226",
+                                    "left": "380",
+                                    "stepType": "\/api\/3\/workflow_step_types\/74932bdc-b8b6-4d24-88c4-1a4dfbc524f3",
+                                    "uuid": "0063e254-4e53-4f8b-bd5b-754076277a70"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Configuration",
+                                    "description": null,
+                                    "arguments": {
+                                        "alerts_type_map": "{}",
+                                        "alerts_state_map": "{}",
+                                        "alerts_status_map": "{}",
+                                        "fileIndicatorType": "{{(\"IndicatorType\" | picklist(\"File\"))[\"@id\"]}}",
+                                        "alerts_severity_map": "{}"
+                                    },
+                                    "status": null,
+                                    "top": "130",
+                                    "left": "206",
+                                    "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+                                    "uuid": "15fad73a-6a5d-49ff-8674-d48652cd15d0"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Extract and Link File Indicators",
+                                    "description": null,
+                                    "arguments": {
+                                        "for_each": {
+                                            "item": "{{vars.steps.Create_Record}}",
+                                            "condition": "{{(vars.item.sourcedata | from_json).attachments and (vars.item.createDate == vars.item.modifyDate)}}"
+                                        },
+                                        "arguments": {
+                                            "assetIRI": "",
+                                            "attachments": "{{ (vars.item.sourcedata | from_json).attachments }}",
+                                            "alertRecordIRI": "{{vars.item['@id']}}",
+                                            "emailRecordIRI": "",
+                                            "fileIndicatorType": "{{vars.fileIndicatorType}}",
+                                            "incidentRecordIRI": ""
+                                        },
+                                        "apply_async": false,
+                                        "step_variables": [],
+                                        "workflowReference": "\/api\/3\/workflows\/eb119098-ca1b-4f2f-b572-358d74b68298"
+                                    },
+                                    "status": null,
+                                    "top": "500",
+                                    "left": "920",
+                                    "stepType": "\/api\/3\/workflow_step_types\/74932bdc-b8b6-4d24-88c4-1a4dfbc524f3",
+                                    "uuid": "263e1943-224f-4cce-ac4a-e8fb2e26a322"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Create Record",
+                                    "description": null,
+                                    "arguments": {
+                                        "for_each": {
+                                            "item": "{{vars.steps.Fetch_Emails.data}}",
+                                            "__bulk": true,
+                                            "condition": "{{(vars.item[\"body\"][\"html\"] | regex_search('(?<=FSR)(.*?)(?=FSR)') is none) if vars.item[\"body\"][\"html\"] else (vars.item[\"body\"][\"text\"] | regex_search('(?<=FSR)(.*?)(?=FSR)') is none)}}"
+                                        },
+                                        "resource": {
+                                            "name": "{% if vars.item.headers.subject %} {{vars.item.headers.subject}} {% else %} None {% endif %}",
+                                            "type": {
+                                                "id": 216,
+                                                "@id": "\/api\/3\/picklists\/c145394b-069a-449b-a05e-67980d0f4b82",
+                                                "icon": null,
+                                                "uuid": "c145394b-069a-449b-a05e-67980d0f4b82",
+                                                "@type": "Picklist",
+                                                "color": null,
+                                                "display": "Suspicious Email",
+                                                "@context": "\/api\/3\/contexts\/Picklist",
+                                                "listName": "\/api\/3\/picklist_names\/a7087b9c-5660-495f-a8ac-c3b198ddb8c2",
+                                                "itemValue": "Suspicious Email",
+                                                "importedBy": [],
+                                                "orderIndex": 15
+                                            },
+                                            "state": {
+                                                "id": 185,
+                                                "@id": "\/api\/3\/picklists\/a1bac09b-1441-45aa-ad1b-c88744e48e72",
+                                                "icon": null,
+                                                "uuid": "a1bac09b-1441-45aa-ad1b-c88744e48e72",
+                                                "@type": "Picklist",
+                                                "color": null,
+                                                "display": "New",
+                                                "@context": "\/api\/3\/contexts\/Picklist",
+                                                "listName": "\/api\/3\/picklist_names\/2f9ed741-25fe-475a-9f12-64336288eebf",
+                                                "itemValue": "New",
+                                                "importedBy": [],
+                                                "orderIndex": 0
+                                            },
+                                            "source": "{% if  'reporterEmailAddress' in vars.item %}User Reported{% else %}Email Server{% endif %}",
+                                            "status": {
+                                                "id": 188,
+                                                "@id": "\/api\/3\/picklists\/7de816ff-7140-4ee5-bd05-93ce22002146",
+                                                "icon": null,
+                                                "uuid": "7de816ff-7140-4ee5-bd05-93ce22002146",
+                                                "@type": "Picklist",
+                                                "color": null,
+                                                "display": "Open",
+                                                "@context": "\/api\/3\/contexts\/Picklist",
+                                                "listName": "\/api\/3\/picklist_names\/33e964a9-d607-49f2-813c-7ce46141815a",
+                                                "itemValue": "Open",
+                                                "importedBy": [],
+                                                "orderIndex": 1
+                                            },
+                                            "emailTo": "{{vars.item[\"headers\"][\"to\"]}}",
+                                            "fileHash": "{% if vars.item.attachments | json_query(\"[*].metadata.md5\") | join(',') %}{{vars.item.attachments | json_query(\"[*].metadata.md5\") | join(', ')}}{%else%}NA{% endif%}",
+                                            "reporter": "{{vars.item.reporterEmailAddress}}",
+                                            "severity": {
+                                                "id": 363,
+                                                "@id": "\/api\/3\/picklists\/b3c20a3a-ecfd-4adc-a225-0205968e6793",
+                                                "icon": null,
+                                                "uuid": "b3c20a3a-ecfd-4adc-a225-0205968e6793",
+                                                "@type": "Picklist",
+                                                "color": "#D2AC1A",
+                                                "display": "Medium",
+                                                "@context": "\/api\/3\/contexts\/Picklist",
+                                                "listName": "\/api\/3\/picklist_names\/4e80cba3-032f-48b4-ac03-17e3ec247aac",
+                                                "itemValue": "Medium",
+                                                "importedBy": [],
+                                                "orderIndex": 2
+                                            },
+                                            "sourceId": "{% if vars.item.headers['message-id'] %} {{ vars.item.headers['message-id'] | join }} {% else %} null {% endif %}",
+                                            "__replace": "false",
+                                            "emailBody": "<p>{%if vars.item[\"body\"][\"html\"] %}{{vars.item[\"body\"][\"html\"]}}{%else%}{{vars.item[\"body\"][\"text\"]}}{%endif%}<\/p>",
+                                            "emailFrom": "{{vars.item[\"headers\"][\"from\"]}}",
+                                            "fileNames": "{% if vars.item.attachments | json_query(\"[*].metadata.md5\") | join(',') %}{{vars.item.attachments | json_query(\"[*].metadata.md5\") | join(', ')}}{%else%}NA{% endif%}",
+                                            "returnPath": "{% if vars.item.headers['return-path'] %}{{ (vars.item.headers['return-path'] |join(\", \") if vars.item.headers['return-path'] is not string else vars.item.headers['return-path']) | replace(\"<\",\"\") | replace(\">\",\"\")}}{% endif %}",
+                                            "sourcedata": "{{vars.item | toJSON}}",
+                                            "emailHeaders": "{{vars.item[\"headers\"] | toJSON}}",
+                                            "emailSubject": "{{vars.item[\"headers\"][\"subject\"]}}",
+                                            "senderDomain": "{% if vars.item.headers.from %}{{(vars.item.headers.from.split('<')[-1] | replace(\">\",\"\")).split('@')[-1] | replace(\">\",\"\")}}{% endif %}",
+                                            "reporterEmailBody": "<p>{% if vars.item[\"reporterEmailBody\"] %}{{vars.item[\"reporterEmailBody\"][\"html\"]}}{%endif%}<\/p>",
+                                            "senderEmailAddress": "{% if vars.item.headers.from %}{{vars.item.headers.from }}{% endif %}",
+                                            "recipientEmailAddress": "{% if vars.item.headers['to'] is not string %}{{vars.item.headers['to'] | join(',') }}{%else%}{{vars.item.headers['to']}}{% endif%}"
+                                        },
+                                        "_showJson": false,
+                                        "operation": "Overwrite",
+                                        "collection": "\/api\/3\/upsert\/alerts",
+                                        "__recommend": [],
+                                        "fieldOperation": {
+                                            "recordTags": "Overwrite"
+                                        },
+                                        "step_variables": []
+                                    },
+                                    "status": null,
+                                    "top": "391",
+                                    "left": "740",
+                                    "stepType": "\/api\/3\/workflow_step_types\/2597053c-e718-44b4-8394-4d40fe26d357",
+                                    "uuid": "41bb8379-c17d-49ba-9fea-19ac7ea00329"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Start",
+                                    "description": null,
+                                    "arguments": {
+                                        "route": "fetch_emails_exchange",
+                                        "step_variables": {
+                                            "input": {
+                                                "params": {
+                                                    "api_body": "{{vars.request.data}}"
+                                                }
+                                            }
+                                        },
+                                        "authentication_methods": [
+                                            ""
+                                        ]
+                                    },
+                                    "status": null,
+                                    "top": "30",
+                                    "left": "40",
+                                    "stepType": "\/api\/3\/workflow_step_types\/df26c7a2-4166-4ca5-91e5-548e24c01b5f",
+                                    "uuid": "4e04bea2-aa20-4ade-b3ff-f686e446a72a"
+                                }
+                            ],
+                            "routes": [
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Start -> Configuration",
+                                    "targetStep": "\/api\/3\/workflow_steps\/15fad73a-6a5d-49ff-8674-d48652cd15d0",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/4e04bea2-aa20-4ade-b3ff-f686e446a72a",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "ec9b1b5a-3147-46e9-b45b-4149ea7c01d5"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Configuration -> Fetch Emails",
+                                    "targetStep": "\/api\/3\/workflow_steps\/0063e254-4e53-4f8b-bd5b-754076277a70",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/15fad73a-6a5d-49ff-8674-d48652cd15d0",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "c32a0efe-9090-4e63-9413-dc170f6330fc"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Create Record -> Extract and Link File Indicators",
+                                    "targetStep": "\/api\/3\/workflow_steps\/263e1943-224f-4cce-ac4a-e8fb2e26a322",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/41bb8379-c17d-49ba-9fea-19ac7ea00329",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "d3070c02-e134-4d8f-9718-3cc1c05c0e2e"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Fetch Emails -> Create Communications Record",
+                                    "targetStep": "\/api\/3\/workflow_steps\/3159d1d7-a0e5-4bcd-ac75-8cac32e62c78",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/0063e254-4e53-4f8b-bd5b-754076277a70",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "6cf0acd9-e24f-4106-a460-afad3754e6b0"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Create Communications Record -> Create Record",
+                                    "targetStep": "\/api\/3\/workflow_steps\/41bb8379-c17d-49ba-9fea-19ac7ea00329",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/3159d1d7-a0e5-4bcd-ac75-8cac32e62c78",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "21f8e10d-f444-4dc7-a27b-5a1bdd8e6cb2"
+                                }
+                            ],
+                            "priority": null,
+                            "uuid": "37a1f2f0-8d0e-47d8-9b07-2b852db702ca",
+                            "owners": [],
+                            "isPrivate": false,
+                            "deletedAt": null,
+                            "recordTags": [
+                                "dataingestion",
+                                "create",
+                                "ingest",
+                                "Microsoft",
+                                "microsoft-exchange",
+                                "exchange"
+                            ],
+                            "schedules": [
+                                {
+                                    "id": "gAAAAABi1_vuaOhsceEbcHjwmf1kNqFymRvA6GD7t2Y2scwVMiOXClTtOn8ObR2aMjUt87vXMJETpBqLhTXA9UmYgM7bN0yAdQ==",
+                                    "crontab": {
+                                        "id": 4,
+                                        "minute": "0",
+                                        "hour": "*\/1",
+                                        "day_of_week": "*",
+                                        "day_of_month": "*",
+                                        "month_of_year": "*",
+                                        "timezone": "UTC"
+                                    },
+                                    "interval": null,
+                                    "name": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                                    "task": "workflow.tasks.periodic_task",
+                                    "args": "[]",
+                                    "kwargs": {
+                                        "exit_if_running": false,
+                                        "wf_iri": "\/api\/3\/workflows\/37a1f2f0-8d0e-47d8-9b07-2b852db702ca",
+                                        "createUser": "\/api\/3\/people\/3451141c-bac6-467c-8d72-85e0fab569ce",
+                                        "name": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                                        "description": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                                        "auth": {
+                                            "auth_method": "CS HMAC"
+                                        },
+                                        "referenceid": null,
+                                        "schedule_entry_name": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                                        "schedule_id": "ebb24336-7491-4c43-82e6-4577d702718e",
+                                        "start_time": null,
+                                        "expires": null,
+                                        "timezone": "UTC",
+                                        "priority": null
+                                    },
+                                    "queue": null,
+                                    "exchange": null,
+                                    "routing_key": null,
+                                    "headers": "{}",
+                                    "priority": 3,
+                                    "expires": null,
+                                    "expire_seconds": null,
+                                    "one_off": false,
+                                    "start_time": null,
+                                    "enabled": true,
+                                    "last_run_at": "2022-07-20T12:00:00.024740Z",
+                                    "total_run_count": 2443,
+                                    "date_changed": "2022-07-20T12:00:00.087481Z",
+                                    "description": "Ingestion_exchange_Exchange_ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                                    "solar": null,
+                                    "clocked": null
+                                }
+                            ]
+                        },
+                        {
+                            "@type": "Workflow",
+                            "triggerLimit": null,
+                            "name": "> Exchange > Extract and Link File Indicator",
+                            "aliasName": null,
+                            "tag": "#exchange #dataingestion",
+                            "description": "Create indicator (if it doesn't exist already), and link to specified email, alert or incident",
+                            "isActive": true,
+                            "debug": false,
+                            "singleRecordExecution": false,
+                            "remoteExecutableFlag": false,
+                            "parameters": [
+                                "attachments",
+                                "fileIndicatorType",
+                                "alertRecordIRI",
+                                "emailRecordIRI",
+                                "incidentRecordIRI",
+                                "assetIRI"
+                            ],
+                            "synchronous": false,
+                            "collection": "\/api\/3\/workflow_collections\/ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                            "versions": [],
+                            "triggerStep": "\/api\/3\/workflow_steps\/60d81ae0-c121-4bac-a6fd-72df23dd85e1",
+                            "steps": [
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Link Indicator",
+                                    "description": null,
+                                    "arguments": {
+                                        "for_each": {
+                                            "item": "{{vars.steps.Create_Indicators | json_query('[*][\"@id\"][]')}}",
+                                            "__bulk": true,
+                                            "condition": ""
+                                        },
+                                        "resource": {
+                                            "alerts": "{% if vars.input.params.alertRecordIRI != \"\" %}['{{vars.input.params.alertRecordIRI}}']{% endif %}",
+                                            "assets": "{% if vars.input.params.assetIRI != \"\" %}['{{vars.input.params.assetIRI}}']{% endif %}",
+                                            "incidents": "{% if vars.input.params.incidentRecordIRI != \"\" %}['{{vars.input.params.incidentRecordIRI}}']{% endif %}"
+                                        },
+                                        "_showJson": false,
+                                        "operation": "Overwrite",
+                                        "collection": "{{ vars.item }}",
+                                        "collectionType": "\/api\/3\/indicators",
+                                        "fieldOperation": {
+                                            "recordTags": "Overwrite"
+                                        },
+                                        "step_variables": []
+                                    },
+                                    "status": null,
+                                    "top": "346",
+                                    "left": "580",
+                                    "stepType": "\/api\/3\/workflow_step_types\/b593663d-7d13-40ce-a3a3-96dece928722",
+                                    "uuid": "28caa201-e250-4ee8-8a1d-4b4c711d131c"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Start",
+                                    "description": null,
+                                    "arguments": {
+                                        "step_variables": {
+                                            "input": {
+                                                "params": {
+                                                    "assetIRI": "{{ vars.assetIRI }}",
+                                                    "attachments": "{{ vars.attachments }}",
+                                                    "alertRecordIRI": "{{ vars.alertRecordIRI }}",
+                                                    "emailRecordIRI": "{{ vars.emailRecordIRI }}",
+                                                    "fileIndicatorType": "{{ vars.fileIndicatorType }}",
+                                                    "incidentRecordIRI": "{{ vars.incidentRecordIRI }}"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "status": null,
+                                    "top": "40",
+                                    "left": "40",
+                                    "stepType": "\/api\/3\/workflow_step_types\/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+                                    "uuid": "60d81ae0-c121-4bac-a6fd-72df23dd85e1"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Upload File IOCs",
+                                    "description": null,
+                                    "arguments": {
+                                        "params": {
+                                            "filename": "{{vars.item.metadata.filename}}",
+                                            "file_path": "{{vars.item.file}}",
+                                            "create_attachment": false
+                                        },
+                                        "version": "3.0.0",
+                                        "for_each": {
+                                            "item": "{{ vars.attachments }}",
+                                            "condition": ""
+                                        },
+                                        "connector": "cyops_utilities",
+                                        "operation": "upload_file_to_cyops",
+                                        "operationTitle": "File: Upload a file to CyOPs and Create an Attachment",
+                                        "step_variables": []
+                                    },
+                                    "status": null,
+                                    "top": "120",
+                                    "left": "220",
+                                    "stepType": "\/api\/3\/workflow_step_types\/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+                                    "uuid": "38ce7522-0bb9-4e45-a891-6df370cb9e0e"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Create Indicators",
+                                    "description": null,
+                                    "arguments": {
+                                        "for_each": {
+                                            "item": "{{vars.steps.Upload_File_IOCs}}",
+                                            "__bulk": true,
+                                            "condition": ""
+                                        },
+                                        "resource": {
+                                            "file": "{{ vars.item.data['@id'] or None }}",
+                                            "value": "File -  {{vars.item.data.filename}}",
+                                            "__replace": "false",
+                                            "typeofindicator": "{{vars.input.params.fileIndicatorType}}"
+                                        },
+                                        "_showJson": false,
+                                        "operation": "Overwrite",
+                                        "collection": "\/api\/3\/upsert\/indicators",
+                                        "fieldOperation": {
+                                            "recordTags": "Overwrite"
+                                        },
+                                        "step_variables": []
+                                    },
+                                    "status": null,
+                                    "top": "240",
+                                    "left": "420",
+                                    "stepType": "\/api\/3\/workflow_step_types\/2597053c-e718-44b4-8394-4d40fe26d357",
+                                    "uuid": "dcf83493-0091-481d-ac25-625823aeba57"
+                                }
+                            ],
+                            "routes": [
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Create Indicators -> Link Indicator",
+                                    "targetStep": "\/api\/3\/workflow_steps\/28caa201-e250-4ee8-8a1d-4b4c711d131c",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/dcf83493-0091-481d-ac25-625823aeba57",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "daf69262-c582-4c57-83e9-23f77407a11a"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Upload File IOCs -> Create Indicators",
+                                    "targetStep": "\/api\/3\/workflow_steps\/dcf83493-0091-481d-ac25-625823aeba57",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/38ce7522-0bb9-4e45-a891-6df370cb9e0e",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "668e03de-ccad-4b22-83c7-795de56f238d"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Start -> Upload File IOCs",
+                                    "targetStep": "\/api\/3\/workflow_steps\/38ce7522-0bb9-4e45-a891-6df370cb9e0e",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/60d81ae0-c121-4bac-a6fd-72df23dd85e1",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "6ea71167-ce36-428d-887c-59ce21c1fcd2"
+                                }
+                            ],
+                            "priority": null,
+                            "uuid": "eb119098-ca1b-4f2f-b572-358d74b68298",
+                            "owners": [],
+                            "isPrivate": false,
+                            "deletedAt": null,
+                            "recordTags": [
+                                "dataingestion",
+                                "Microsoft",
+                                "microsoft-exchange",
+                                "exchange"
+                            ]
+                        },
+                        {
+                            "@type": "Workflow",
+                            "triggerLimit": null,
+                            "name": "> Exchange > Process Email",
+                            "aliasName": null,
+                            "tag": "#exchange #dataIngestion",
+                            "description": "Extract Exchange Email and checks if msg\/eml file is present",
+                            "isActive": true,
+                            "debug": false,
+                            "singleRecordExecution": false,
+                            "remoteExecutableFlag": false,
+                            "parameters": [
+                                "email"
+                            ],
+                            "synchronous": false,
+                            "collection": "\/api\/3\/workflow_collections\/ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                            "versions": [],
+                            "triggerStep": "\/api\/3\/workflow_steps\/e116968f-38ca-4274-bc3d-64256e9e1b66",
+                            "steps": [
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Start",
+                                    "description": null,
+                                    "arguments": {
+                                        "step_variables": {
+                                            "input": {
+                                                "params": {
+                                                    "email": "{{ vars.email }}"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "status": null,
+                                    "top": "28",
+                                    "left": "12",
+                                    "stepType": "\/api\/3\/workflow_step_types\/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+                                    "uuid": "e116968f-38ca-4274-bc3d-64256e9e1b66"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Update headers in parsed data",
+                                    "description": null,
+                                    "arguments": {
+                                        "_temp": "{% for item in vars.email.parsed_attachment_data %}{% set _dummy3=item.update({'reporterEmailBody': vars.email.body}) %}{% set _dummy4=item.update({'reporterEmailAddress': vars.email.headers.from}) %}{% endfor %}"
+                                    },
+                                    "status": null,
+                                    "top": "388",
+                                    "left": "807",
+                                    "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+                                    "uuid": "0bb146c5-ab25-4075-be09-726f6fbc0122"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Configuration",
+                                    "description": null,
+                                    "arguments": {
+                                        "_temp": "{% set lower_case_headers = {} %}{% for key, value in vars.email.headers.items() %}{% set _dummy = lower_case_headers.update({key.lower(): value}) %}{% endfor %}{{vars.email.update({'headers': lower_case_headers}) }}",
+                                        "emlAttachments": "{{vars.email.attachments  | json_query(\"[?contains(metadata.filename, '.eml')]\") }}",
+                                        "msgAttachments": "{{vars.email.attachments  | json_query(\"[?contains(metadata.filename, '.msg')]\") }}"
+                                    },
+                                    "status": null,
+                                    "top": "169",
+                                    "left": "180",
+                                    "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+                                    "uuid": "5fe33dfd-c90d-4d3b-b052-76be7d03363b"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Attachment is msg or eml",
+                                    "description": "Check attachments is msg or eml",
+                                    "arguments": {
+                                        "conditions": [
+                                            {
+                                                "option": "No",
+                                                "step_iri": "\/api\/3\/workflow_steps\/fb1036da-1215-4434-aff3-df39c9fcce68",
+                                                "condition": "{{ vars.msgAttachments | length == 0 and vars.emlAttachments | length == 0 }}"
+                                            },
+                                            {
+                                                "option": "Yes",
+                                                "step_iri": "\/api\/3\/workflow_steps\/0bb146c5-ab25-4075-be09-726f6fbc0122",
+                                                "condition": "{{ vars.msgAttachments | length > 0 or vars.emlAttachments | length >0 }}"
+                                            }
+                                        ]
+                                    },
+                                    "status": null,
+                                    "top": "293",
+                                    "left": "500",
+                                    "stepType": "\/api\/3\/workflow_step_types\/12254cf5-5db7-4b1a-8cb1-3af081924b28",
+                                    "uuid": "601a3ab5-2c07-4218-9de4-8ec3786fa167"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Set Processed Email",
+                                    "description": null,
+                                    "arguments": {
+                                        "processed_email": "{{vars.email}}"
+                                    },
+                                    "status": null,
+                                    "top": "180",
+                                    "left": "800",
+                                    "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+                                    "uuid": "fb1036da-1215-4434-aff3-df39c9fcce68"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Set Attachments as Processed Email",
+                                    "description": null,
+                                    "arguments": {
+                                        "processed_email": "{{vars.email.parsed_attachment_data}}"
+                                    },
+                                    "status": null,
+                                    "top": "388",
+                                    "left": "1128",
+                                    "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+                                    "uuid": "7bd8e76c-3391-4a9d-add3-d227c67097d9"
+                                }
+                            ],
+                            "routes": [
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Attachment is msg or eml -> Update headers in parsed data",
+                                    "targetStep": "\/api\/3\/workflow_steps\/0bb146c5-ab25-4075-be09-726f6fbc0122",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/601a3ab5-2c07-4218-9de4-8ec3786fa167",
+                                    "label": "Yes",
+                                    "isExecuted": false,
+                                    "uuid": "f4601f84-b234-4904-9389-e92acd3539c9"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Attachment is msg or eml -> Set Processed Email",
+                                    "targetStep": "\/api\/3\/workflow_steps\/fb1036da-1215-4434-aff3-df39c9fcce68",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/601a3ab5-2c07-4218-9de4-8ec3786fa167",
+                                    "label": "No",
+                                    "isExecuted": false,
+                                    "uuid": "aa398436-bab2-40a2-8820-38906511d481"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Configuration -> Attachment is msg or eml",
+                                    "targetStep": "\/api\/3\/workflow_steps\/601a3ab5-2c07-4218-9de4-8ec3786fa167",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/5fe33dfd-c90d-4d3b-b052-76be7d03363b",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "382edd0d-ed47-457b-89bc-0a52d463adc3"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Update headers in parsed data -> Set Attachments as Processed Email",
+                                    "targetStep": "\/api\/3\/workflow_steps\/7bd8e76c-3391-4a9d-add3-d227c67097d9",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/0bb146c5-ab25-4075-be09-726f6fbc0122",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "f8867aed-d260-4f47-be0c-90953d4817cd"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Start -> Configuration",
+                                    "targetStep": "\/api\/3\/workflow_steps\/5fe33dfd-c90d-4d3b-b052-76be7d03363b",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/e116968f-38ca-4274-bc3d-64256e9e1b66",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "babf0d85-2554-445b-84ff-073c6b02a052"
+                                }
+                            ],
+                            "priority": null,
+                            "uuid": "1cf662a8-c2f4-4152-84dd-761859e70ae7",
+                            "owners": [],
+                            "isPrivate": false,
+                            "deletedAt": null,
+                            "recordTags": [
+                                "dataingestion",
+                                "Microsoft",
+                                "microsoft-exchange",
+                                "exchange"
+                            ]
+                        },
+                        {
+                            "@type": "Workflow",
+                            "triggerLimit": null,
+                            "name": "> Exchange > Fetch",
+                            "aliasName": null,
+                            "tag": "#exchange #dataingestion #fetch",
+                            "description": "Fetches Email from Exchange mailbox",
+                            "isActive": true,
+                            "debug": false,
+                            "singleRecordExecution": false,
+                            "remoteExecutableFlag": false,
+                            "parameters": [],
+                            "synchronous": false,
+                            "collection": "\/api\/3\/workflow_collections\/ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                            "versions": [],
+                            "triggerStep": "\/api\/3\/workflow_steps\/ff593600-a55e-4975-a122-c6052e4763e7",
+                            "steps": [
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Fetch emails",
+                                    "description": null,
+                                    "arguments": {
+                                        "name": "Exchange",
+                                        "config": "ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                                        "params": {
+                                            "limit": "",
+                                            "source": "{{vars.source}}",
+                                            "mark_read": "{{false if vars.request.env_setup else true}}",
+                                            "pull_oldest": "",
+                                            "parse_inline": "{{vars.parse_inline}}",
+                                            "source_folder": "{{vars.source_folder}}",
+                                            "save_as_attachment": false,
+                                            "extract_attach_data": true,
+                                            "exclude_absolute_path": false
+                                        },
+                                        "version": "3.4.4",
+                                        "connector": "exchange",
+                                        "operation": "get_email_new",
+                                        "operationTitle": "Get Unread Emails",
+                                        "step_variables": []
+                                    },
+                                    "status": null,
+                                    "top": "212",
+                                    "left": "428",
+                                    "stepType": "\/api\/3\/workflow_step_types\/0bfed618-0316-11e7-93ae-92361f002671",
+                                    "uuid": "539761ce-8976-4c8d-9374-eb0ace7811e0"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Set Consolidated Result",
+                                    "description": null,
+                                    "arguments": {
+                                        "data": "{{ vars.steps.Process_emails | json_query('[].processed_email[]') }}",
+                                        "use_communications": "{{vars.use_communications}}"
+                                    },
+                                    "status": null,
+                                    "top": "406",
+                                    "left": "740",
+                                    "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+                                    "uuid": "8e1dc92d-1854-46c1-a9f6-e9d97d422826"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Start",
+                                    "description": null,
+                                    "arguments": {
+                                        "step_variables": {
+                                            "_configuration_schema": "[\n  {\n    \"title\": \"Source\",\n    \"name\": \"source\",\n    \"type\": \"select\",\n    \"tooltip\": \"Retrieve the unread emails for selected folder from the Exchange server.\",\n    \"required\": false,\n    \"editable\": true,\n    \"visible\": true,\n    \"options\": [\n      \"Inbox\",\n      \"Sent\",\n      \"Drafts\",\n      \"Trash\",\n      \"Custom Folder\"\n    ],\n    \"value\": \"Inbox\",\n    \"onchange\": {\n      \"Custom Folder\": [\n        {\n          \"title\": \"Folder Name\",\n          \"tooltip\": \"Retrieve the unread emails from specified source folder in Exchange server\",\n          \"name\": \"source_folder\",\n          \"required\": true,\n          \"editable\": true,\n          \"visible\": true,\n          \"type\": \"text\",\n          \"value\": \"\"\n        }\n      ]\n    }\n  },\n  {\n    \"title\": \"Parse Inline Images\",\n    \"name\": \"parse_inline\",\n    \"type\": \"checkbox\",\n    \"tooltip\": \"Select this option to retrieve the body of the unread emails including inline images, from the Exchange server\",\n    \"required\": false,\n    \"editable\": true,\n    \"visible\": true,\n    \"value\": false\n  },\n  {\n    \"title\": \"Use Unified Communication\",\n    \"name\": \"use_communications\",\n    \"type\": \"checkbox\",\n    \"tooltip\": \"Select this option to create a record of the retrieved email in the Communication Module\",\n    \"required\": false,\n    \"editable\": true,\n    \"visible\": true,\n    \"value\": true\n  }\n]"
+                                        }
+                                    },
+                                    "status": null,
+                                    "top": "34",
+                                    "left": "80",
+                                    "stepType": "\/api\/3\/workflow_step_types\/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+                                    "uuid": "ff593600-a55e-4975-a122-c6052e4763e7"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Configuration",
+                                    "description": null,
+                                    "arguments": {
+                                        "source": "Inbox",
+                                        "parse_inline": "false",
+                                        "source_folder": "",
+                                        "use_communications": "true"
+                                    },
+                                    "status": null,
+                                    "top": "120",
+                                    "left": "260",
+                                    "stepType": "\/api\/3\/workflow_step_types\/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+                                    "uuid": "0a89d767-65f8-45b2-8c6d-a413c70fea45"
+                                },
+                                {
+                                    "@type": "WorkflowStep",
+                                    "name": "Process emails",
+                                    "description": null,
+                                    "arguments": {
+                                        "for_each": {
+                                            "item": "{{vars.steps.Fetch_emails.data}}",
+                                            "condition": ""
+                                        },
+                                        "arguments": {
+                                            "email": "{{vars.item}}"
+                                        },
+                                        "step_variables": [],
+                                        "workflowReference": "\/api\/3\/workflows\/1cf662a8-c2f4-4152-84dd-761859e70ae7"
+                                    },
+                                    "status": null,
+                                    "top": "307",
+                                    "left": "587",
+                                    "stepType": "\/api\/3\/workflow_step_types\/74932bdc-b8b6-4d24-88c4-1a4dfbc524f3",
+                                    "uuid": "d028c73e-e2b4-490a-a8e2-1d60e6cbee99"
+                                }
+                            ],
+                            "routes": [
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Configuration -> Fetch emails",
+                                    "targetStep": "\/api\/3\/workflow_steps\/539761ce-8976-4c8d-9374-eb0ace7811e0",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/0a89d767-65f8-45b2-8c6d-a413c70fea45",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "cb24d99f-8554-4144-a88f-4c0fe97b43bf"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Process emails -> Set Consolidated Result",
+                                    "targetStep": "\/api\/3\/workflow_steps\/8e1dc92d-1854-46c1-a9f6-e9d97d422826",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/d028c73e-e2b4-490a-a8e2-1d60e6cbee99",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "240e9aa2-a91f-42c8-808d-af8adf98d92d"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Start -> Configuration",
+                                    "targetStep": "\/api\/3\/workflow_steps\/0a89d767-65f8-45b2-8c6d-a413c70fea45",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/ff593600-a55e-4975-a122-c6052e4763e7",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "f534e075-3c1f-4499-b070-e2b4931732e7"
+                                },
+                                {
+                                    "@type": "WorkflowRoute",
+                                    "name": "Fetch emails -> Process emails",
+                                    "targetStep": "\/api\/3\/workflow_steps\/d028c73e-e2b4-490a-a8e2-1d60e6cbee99",
+                                    "sourceStep": "\/api\/3\/workflow_steps\/539761ce-8976-4c8d-9374-eb0ace7811e0",
+                                    "label": null,
+                                    "isExecuted": false,
+                                    "uuid": "fdb27e2d-a6d5-4419-9114-743d7f0fb09b"
+                                }
+                            ],
+                            "priority": null,
+                            "uuid": "b03f9571-cad5-4126-ac80-bd6183d42e06",
+                            "owners": [],
+                            "isPrivate": false,
+                            "deletedAt": null,
+                            "recordTags": [
+                                "dataingestion",
+                                "fetch",
+                                "Microsoft",
+                                "microsoft-exchange",
+                                "exchange"
+                            ]
+                        }
+                    ],
+                    "image": null,
+                    "uuid": "ad5df79d-5b07-4de4-a6d8-5e0a8602f6ad",
+                    "deletedAt": null,
+                    "recordTags": []
+                }
+            ],
+            "exported_tags": [
+                "dataingestion",
+                "create",
+                "ingest",
+                "Microsoft",
+                "microsoft-exchange",
+                "exchange",
+                "fetch"
+            ],
+            "globalVariables": []
+        }
+    },
+    {
+        "name": "file-content-extraction",
+        "label": "File Content Extraction",
+        "category": "utilities",
+        "description": "Utility to Extract Text, Artifacts and Metadata from almost any file",
+        "publisher": null,
+        "operation_roles": {
+            "extract_text": [],
+            "extract_indicators": [],
+            "get_backend_config": []
+        },
+        "configurations": [],
+        "dataImports": [],
+        "install_mode": "rpm"
+    }
+]

@@ -1,0 +1,64 @@
+{
+    "name": "advisory-Ingestion",
+    "version": "1.0.0",
+    "type": "solutionpack",
+    "local": true,
+    "label": "advisory-ingestion",
+    "dependencies": [],
+    "prerequisite": "Below connectors are needed\n* Exchange\n* Code Snippet\n* File Content Extraction\nExchange connectors can be replaced with Gmail (IMAP) or SMTP. \nUpdate the email address in Exchange connector step to get email report.\n\n",
+    "publisher": "Fortinet - CSE",
+    "description": "Most of the Financial Institutes, Insurance Companies, Government departments, etc receive advisories from TIPs and various organisations.  Most advisories contain - IPs, Domain names, Hash, URL, etc. Advisories are generally delivered via email having attachments in PDF, Excel or CSV format.",
+    "help": null,
+    "category": [
+        "CTI"
+    ],
+    "supportInfo": "",
+    "iconLarge": null,
+    "recordTags": [
+        "advisories",
+        "IOC"
+    ],
+    "fsrMinCompatibility": "7.2.0",
+    "date": "2022-07-20T12:58:23+00:00",
+    "contents": {
+        "playbooks": [
+            {
+                "name": "Extract Advisories"
+            }
+        ],
+        "globalVariables": [
+            {
+                "id": 14,
+                "name": "Excludelist_Domains",
+                "value": "google.com,yahoo.com,fortinet.net,cybersponse.com,gmail.com,outlook.com,microsoft.com",
+                "default_value": "google.com,yahoo.com,fortinet.net,cybersponse.com,gmail.com,outlook.com,microsoft.com"
+            },
+            {
+                "id": 13,
+                "name": "Excludelist_URLs",
+                "value": "https://www.google.com,https://mail.yahoo.com/login.html,https://www.office.com/",
+                "default_value": "https://www.google.com,https://mail.yahoo.com/login.html,https://www.office.com/"
+            },
+            {
+                "id": 12,
+                "name": "Excludelist_IPs",
+                "value": "8.8.8.8,10.1.1.2,151.205.102.42,10.0.1.1",
+                "default_value": "8.8.8.8,10.1.1.2"
+            }
+        ],
+        "connectors": [
+            {
+                "name": "Code Snippet",
+                "apiName": "code-snippet"
+            },
+            {
+                "name": "Exchange",
+                "apiName": "exchange"
+            },
+            {
+                "name": "File Content Extraction",
+                "apiName": "file-content-extraction"
+            }
+        ]
+    }
+}
